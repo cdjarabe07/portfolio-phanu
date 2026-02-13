@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio – Djarabé Djeramadji Phanuel</title>
+
   <style>
     :root {
       --bg-dark: #0d0d0d;
@@ -36,7 +36,6 @@
       text-decoration: underline;
     }
 
-    /* --- NAVIGATION --- */
     nav {
       position: fixed;
       top: 0;
@@ -82,6 +81,8 @@
       font-weight: 600;
       text-decoration: none;
       transition: 0.3s;
+      display: inline-block;
+      margin-top: 15px;
     }
 
     .btn-cv:hover {
@@ -89,7 +90,6 @@
       transform: scale(1.05);
     }
 
-    /* --- HEADER / ACCUEIL --- */
     header {
       background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('background.jpg') center/cover no-repeat;
       padding: 180px 10% 120px;
@@ -114,7 +114,6 @@
       font-style: italic;
     }
 
-    /* --- SECTIONS --- */
     section {
       padding: 80px 10%;
     }
@@ -154,7 +153,6 @@
       color: var(--accent);
     }
 
-    /* --- PROJETS --- */
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -191,6 +189,7 @@
     .project-info p {
       color: #ccc;
       margin: 0;
+      font-size: 0.95rem;
     }
 
     footer {
@@ -202,135 +201,130 @@
 
   </style>
 </head>
+
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">Phanuel</div>
-    <ul>
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#experience">Expériences</a></li>
-      <li><a href="#education">Formation</a></li>
-      <li><a href="#contacts">Contact</a></li>
-      <li><a href="#references">Références</a></li>
-    </ul>
-    <a href="CV_Phanuel.pdf" class="btn-cv" download>Télécharger le CV</a>
-  </nav>
+<nav>
+  <div class="logo">Phanuel</div>
+  <ul>
+    <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#objective">Objectif</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#experience">Expériences</a></li>
+    <li><a href="#education">Formation</a></li>
+    <li><a href="#contacts">Contact</a></li>
+  </ul>
+  <a href="CV_Phanuel.pdf" class="btn-cv" download>Télécharger le CV</a>
+</nav>
 
-  <!-- Accueil -->
-  <header id="accueil">
-    <h1>Djarabé Djeramadji Phanuel</h1>
-    <h3>Ingénieur en formation – Génie Électrique et Énergétique</h3>
-    <p>Passionné par la conception et l’optimisation de systèmes électriques et photovoltaïques pour soutenir la transition énergétique en Afrique.</p>
-  </header>
+<header id="accueil">
+  <h1>Djarabé Djeramadji Phanuel</h1>
+  <h3>Ingénieur en formation – Génie Électrique et Énergétique</h3>
+  <p>Passionné par la conception et l’optimisation de systèmes électriques et photovoltaïques pour soutenir la transition énergétique en Afrique.</p>
+  <a href="#contacts" class="btn-cv">Me contacter</a>
+</header>
 
-  <!-- À propos -->
-  <section id="about">
-    <h2>À propos</h2>
-    <p>Je suis Djarabé Djeramadji Phanuel, titulaire d'un Master en Génie Électrique, Énergétique et Industriel (option Réseaux Électriques) à l’Institut 2iE. 
-    Mon intérêt porte sur le développement d’infrastructures énergétiques fiables et durables, avec un focus particulier sur les centrales solaires photovoltaïques et leur intégration au réseau.</p>
-  </section>
+<section id="about">
+  <h2>À propos</h2>
+  <p>Ingénieur en Génie Électrique spécialisé en réseaux et systèmes photovoltaïques, avec une expertise en dimensionnement, intégration réseau et analyse technico-économique. Mon ambition est de contribuer au développement d’infrastructures énergétiques fiables et durables en Afrique.</p>
+</section>
 
-  <!-- Compétences -->
-  <section id="skills">
-    <h2>Compétences</h2>
-    <div class="grid-2">
-      <div>
-        <h3>Techniques</h3>
-        <ul>
-          <li>Conception et dimensionnement de systèmes solaires PV</li>
-          <li>Études de pertes, intégration réseau, DAO, SCADA</li>
-          <li>Planification et suivi de projet (MS Project)</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Logiciels & Outils</h3>
-        <ul>
-          <li>AutoCAD, PowerFactory, NEPLAN, PVsyst, WinRelais</li>
-          <li>MS Project, Excel, PowerPoint, Access</li>
-        </ul>
+<section id="objective">
+  <h2>Objectif Professionnel</h2>
+  <p>Contribuer au développement de centrales photovoltaïques et d’infrastructures énergétiques à forte valeur technique, en combinant optimisation réseau, performance énergétique et gestion de projet.</p>
+</section>
+
+<section id="skills">
+  <h2>Compétences</h2>
+  <div class="grid-2">
+    <div>
+      <h3>Techniques</h3>
+      <ul>
+        <li>⚡ Conception et dimensionnement de centrales solaires PV</li>
+        <li>🔌 Études d’intégration réseau HTA/HTB</li>
+        <li>📊 Analyse de pertes, SCADA, DAO</li>
+        <li>📅 Planification et suivi de projet (MS Project)</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Logiciels</h3>
+      <ul>
+        <li>☀️ PVsyst</li>
+        <li>⚡ PowerFactory & NEPLAN</li>
+        <li>📐 AutoCAD</li>
+        <li>📊 MS Project, Excel avancé</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projets</h2>
+  <div class="projects-grid">
+
+    <div class="project">
+      <img src="projet1.jpg" alt="Centrale Solaire de Ferkessédougou">
+      <div class="project-info">
+        <h4>Centrale Solaire de Ferkessédougou</h4>
+        <p>Étude comparative et optimisation d’extension d’une centrale PV avec intégration BESS, simulations avancées sous PVsyst et analyse des performances réseau.</p>
       </div>
     </div>
-  </section>
 
-  <!-- Projets -->
-  <section id="projects">
-    <h2>Projets</h2>
-    <div class="projects-grid">
-
-      <div class="project">
-        <img src="projet1.jpg" alt="Extension de la Centrale Solaire de Ferkessédougou">
-        <div class="project-info">
-          <h4>Centrale Solaire de Ferkessédougou</h4>
-          <p>Étude comparative, optimisation, simulation PVsyst et intégration BESS.</p>
-        </div>
+    <div class="project">
+      <img src="projet2.jpg" alt="Projet Solaire de Kong">
+      <div class="project-info">
+        <h4>Projet Solaire de Kong</h4>
+        <p>Analyse technique du DAO, préparation d’appel d’offres et étude des contraintes HTA pour raccordement réseau.</p>
       </div>
-
-      <div class="project">
-        <img src="projet2.jpg" alt="Projet Solaire de Kong">
-        <div class="project-info">
-          <h4>Projet Solaire de Kong</h4>
-          <p>Analyse du DAO, préparation d’appel d’offres, étude des verrous HTA.</p>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="projet3.jpg" alt="Système PV connecté au réseau">
-        <div class="project-info">
-          <h4>Système PV Connecté au Réseau</h4>
-          <p>Dimensionnement et simulation pour autoconsommation sur PVsyst.</p>
-        </div>
-      </div>
-
     </div>
-  </section>
 
-  <!-- Expériences -->
-  <section id="experience">
-    <h2>Expériences professionnelles</h2>
-    <ul>
-      <li>Stagiaire Ingénieur – VINCI Energies CI (2025)</li>
-      <li>Stagiaire – SONABEL, Burkina Faso (2023)</li>
-      <li>Projets académiques – Institut 2iE (2023)</li>
-    </ul>
-  </section>
+    <div class="project">
+      <img src="projet3.jpg" alt="Système PV connecté au réseau">
+      <div class="project-info">
+        <h4>Système PV Connecté au Réseau</h4>
+        <p>Dimensionnement d’un système photovoltaïque pour autoconsommation industrielle, optimisation des pertes et simulation complète sous PVsyst.</p>
+      </div>
+    </div>
 
-  <!-- Formation -->
-  <section id="education">
-    <h2>Formation</h2>
-    <ul>
-      <li>Master 2 – Génie Électrique, Énergétique et Industriel, Institut 2iE (2023 – en cours)</li>
-      <li>Bachelor – Génie Électrique, Institut 2iE (2022 – 2023)</li>
-      <li>Classes Préparatoires – Institut 2iE (2019 – 2021)</li>
-    </ul>
-  </section>
+  </div>
+</section>
 
-  <!-- Contacts -->
-  <section id="contacts">
-    <h2>Contact</h2>
-    <p>📧 <a href="mailto:djarabedjeramadjiphanuel@gmail.com">djarabedjeramadjiphanuel@gmail.com</a> | <a href="mailto:phanuel.djarabe@2ie-edu.org">phanuel.djarabe@2ie-edu.org</a></p>
-    <p>📱 +226 54 66 43 56 / +226 61 00 39 09</p>
-    <p>🏠 Ouagadougou, Burkina Faso</p>
-    <p>🔗 <a href="https://www.linkedin.com/in/phanuel-djarabébs02-ptec04-D07" target="_blank">LinkedIn</a></p>
-  </section>
+<section id="experience">
+  <h2>Expériences professionnelles</h2>
+  <ul>
+    <li>Stagiaire Ingénieur – VINCI Energies CI (2025)</li>
+    <li>Stagiaire – SONABEL, Burkina Faso (2023)</li>
+    <li>Projets académiques – Institut 2iE (2023)</li>
+  </ul>
+</section>
 
-  <!-- Références -->
-  <section id="references">
-    <h2>Références</h2>
-    <ul>
-      <li><strong>Pr. Y. Moussa SORO</strong> – Chef de département GEEI, Institut 2iE | 📞 +226 68 76 88 22 | ✉️ <a href="mailto:moussa.soro@2ie-edu.org">moussa.soro@2ie-edu.org</a></li>
-      <li><strong>Dr Aboubakar GOMNA</strong> – Enseignant chercheur, Institut 2iE | 📞 +226 51 98 24 20 | ✉️ <a href="mailto:aboubakar.gomna@2ie-edu.org">aboubakar.gomna@2ie-edu.org</a></li>
-      <li><strong>Roland TIAPANI</strong> – Responsable Bureau d’étude Omexon Poste, VINCI Energies CI | ✉️ <a href="mailto:roland.tiapani@omexom.com">roland.tiapani@omexom.com</a></li>
-      <li><strong>Dr. Yohan RICHARDSON</strong> – Chef du département STI, Institut 2iE | 📞 +226 68 76 88 71 | ✉️ <a href="mailto:yohan.richardson@2ie-edu.org">yohan.richardson@2ie-edu.org</a></li>
-    </ul>
-  </section>
+<section id="education">
+  <h2>Formation</h2>
+  <ul>
+    <li>Master 2 – Génie Électrique, Énergétique et Industriel – Institut 2iE</li>
+    <li>Bachelor – Génie Électrique – Institut 2iE</li>
+    <li>Classes Préparatoires Scientifiques – Institut 2iE</li>
+  </ul>
+</section>
 
-  <footer>
-    © 2026 Djarabé Djeramadji Phanuel — Tous droits réservés.
-  </footer>
+<section id="contacts">
+  <h2>Contact</h2>
+  <p>📧 djarabedjeramadjiphanuel@gmail.com</p>
+  <p>📱 +226 54 66 43 56</p>
+  <p>📍 Ouagadougou, Burkina Faso</p>
+  <p>🔗 <a href="https://www.linkedin.com/in/phanuel-djarabébs02-ptec04-D07" target="_blank">LinkedIn</a></p>
+</section>
+
+<section id="references">
+  <h2>Références</h2>
+  <p>Références disponibles sur demande.</p>
+</section>
+
+<footer>
+  © 2025 Djarabé Djeramadji Phanuel — Tous droits réservés.
+</footer>
 
 </body>
 </html>
