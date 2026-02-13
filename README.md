@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -284,20 +285,6 @@
         </div>
       </div>
 
-<div class="project">
-  <a href="memoire/Memoire_Phanuel_Reseaux_Electriques.pdf" target="_blank">
-    <img src="images/memoire-cover.jpg" alt="Mémoire de Master – Réseaux Électriques">
-  </a>
-  <div class="project-info">
-    <h4>Mémoire de Master – Réseaux Électriques</h4>
-    <p>
-      Étude approfondie sur l’intégration des systèmes photovoltaïques au réseau électrique,
-      analyse des contraintes techniques et propositions d’optimisation.
-    </p>
-    <p><strong>Mots-clés :</strong> Réseaux électriques, PV, intégration réseau</p>
-  </div>
-</div>
-
     </div>
   </section>
 
@@ -342,7 +329,7 @@
   </section>
 
   <footer>
-    © 2025 Djarabé Djeramadji Phanuel — Tous droits réservés.
+    © 2026 Djarabé Djeramadji Phanuel — Tous droits réservés.
   </footer>
 
 </body>
