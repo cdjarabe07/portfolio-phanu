@@ -90,7 +90,7 @@
 
     /* --- HEADER / ACCUEIL --- */
     header {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('background.JPEG') center/cover no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('background.jpeg') center/cover no-repeat;
       padding: 180px 10% 120px;
       text-align: center;
     }
