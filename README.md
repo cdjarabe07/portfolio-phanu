@@ -44,7 +44,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap; /* Sécurisation anti-décalage */
       padding: 12px 8%;
       z-index: 1000;
       backdrop-filter: blur(10px);
@@ -63,7 +62,6 @@
       gap: 20px;
       margin: 0;
       padding: 0;
-      align-items: center; /* Sécurisation alignement */
     }
 
     nav ul li a {
@@ -92,7 +90,7 @@
 
     /* --- HEADER / ACCUEIL --- */
     header {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('background.jpg') center/cover no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('background.JPEG') center/cover no-repeat;
       padding: 180px 10% 120px;
       text-align: center;
     }
@@ -266,7 +264,7 @@
         <img src="projet1.jpg" alt="Extension de la Centrale Solaire de Ferkessédougou">
         <div class="project-info">
           <h4>Centrale Solaire de Ferkessédougou</h4>
-          <p>Étude comparative pour l’extension d’une centrale photovoltaïque, incluant optimisation technico-économique, simulations avancées sous PVsyst et analyse d’intégration d’un système de stockage BESS.</p>
+          <p>Étude comparative, optimisation, simulation PVsyst et intégration BESS.</p>
         </div>
       </div>
 
@@ -274,7 +272,7 @@
         <img src="projet2.jpg" alt="Projet Solaire de Kong">
         <div class="project-info">
           <h4>Projet Solaire de Kong</h4>
-          <p>Analyse technique du Dossier d’Appel d’Offres (DAO), préparation des documents de soumission et étude des contraintes de raccordement HTA au réseau électrique.</p>
+          <p>Analyse du DAO, préparation d’appel d’offres, étude des verrous HTA.</p>
         </div>
       </div>
 
@@ -282,20 +280,23 @@
         <img src="projet3.jpg" alt="Système PV connecté au réseau">
         <div class="project-info">
           <h4>Système PV Connecté au Réseau</h4>
-          <p>Dimensionnement complet d’un système photovoltaïque pour autoconsommation, calcul des pertes, optimisation du rendement et simulation de performance sous PVsyst.</p>
+          <p>Dimensionnement et simulation pour autoconsommation sur PVsyst.</p>
         </div>
       </div>
 
-      <div class="project">
-        <a href="memoire/Memoire_Phanuel_Reseaux_Electriques.pdf" target="_blank">
-          <img src="images/memoire-cover.jpg" alt="Mémoire de Master – Réseaux Électriques">
-        </a>
-        <div class="project-info">
-          <h4>Mémoire de Master – Réseaux Électriques</h4>
-          <p>Étude approfondie sur l’intégration des systèmes photovoltaïques au réseau électrique, identification des contraintes techniques et propositions d’optimisation pour améliorer la fiabilité et la performance du système.</p>
-          <p><strong>Mots-clés :</strong> Réseaux électriques, PV, intégration réseau</p>
-        </div>
-      </div>
+<div class="project">
+  <a href="memoire/Memoire_Phanuel_Reseaux_Electriques.pdf" target="_blank">
+    <img src="images/memoire-cover.jpg" alt="Mémoire de Master – Réseaux Électriques">
+  </a>
+  <div class="project-info">
+    <h4>Mémoire de Master – Réseaux Électriques</h4>
+    <p>
+      Étude approfondie sur l’intégration des systèmes photovoltaïques au réseau électrique,
+      analyse des contraintes techniques et propositions d’optimisation.
+    </p>
+    <p><strong>Mots-clés :</strong> Réseaux électriques, PV, intégration réseau</p>
+  </div>
+</div>
 
     </div>
   </section>
@@ -314,7 +315,7 @@
   <section id="education">
     <h2>Formation</h2>
     <ul>
-      <li>Master 2 – Génie Électrique, Énergétique et Industriel, Institut 2iE (2023 – en cours)</li>
+      <li>Master – Génie Électrique, Énergétique et Industriel, Institut 2iE (2023 – 2026)</li>
       <li>Bachelor – Génie Électrique, Institut 2iE (2022 – 2023)</li>
       <li>Classes Préparatoires – Institut 2iE (2019 – 2021)</li>
     </ul>
