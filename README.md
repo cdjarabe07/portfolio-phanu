@@ -155,9 +155,35 @@
 
     /* --- PROJETS --- */
     .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
+  display: grid;
+  grid-template-columns: 1fr; /* mobile par défaut */
+  gap: 25px;
+}
+
+/* Tablette */
+@media (min-width: 700px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* PC */
+@media (min-width: 1000px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* 4e projet en pleine largeur sur tablette et PC */
+@media (min-width: 700px) {
+  .project:nth-child(4) {
+    grid-column: 1 / -1;
+  }
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
     }
 
     .project {
@@ -173,11 +199,24 @@
     }
 
     .project img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background-color: #000;
+}
+.project-image {
+  width: 100%;
+  height: 200px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.project-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
     .project-info {
       padding: 15px;
     }
@@ -203,148 +242,221 @@
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">Phanuel</div>
-    <ul>
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#experience">Expériences</a></li>
-      <li><a href="#education">Formation</a></li>
-      <li><a href="#contacts">Contact</a></li>
-      <li><a href="#references">Références</a></li>
-    </ul>
-    <a href="CV_Phanuel.pdf" class="btn-cv" download>Télécharger le CV</a>
-  </nav>
+<nav>
+<strong style="color:var(--accent)">Phanuel</strong>
+<ul>
+<li><a href="#about">À propos</a></li>
+<li><a href="#skills">Compétences</a></li>
+<li><a href="#projects">Projets</a></li>
+<li><a href="#experience">Expériences</a></li>
+<li><a href="#education">Formation</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#references">Références</a></li>
+</ul>
+<a href="CV_Phanuel.pdf" class="btn-cv" download>Télécharger le CV</a>
+</nav>
 
-  <!-- Accueil -->
-  <header id="accueil">
-    <h1>Djarabé Djeramadji Phanuel</h1>
-    <h3>Ingénieur en formation – Génie Électrique et Énergétique</h3>
-    <p>Passionné par la conception et l’optimisation de systèmes électriques et photovoltaïques pour soutenir la transition énergétique en Afrique.</p>
-  </header>
+<header>
+<h1>Djarabé Djeramadji Phanuel</h1>
+<h3>Ingénieur Génie Électrique & Énergétique</h3>
+<p>Passionné par la conception et l’optimisation de systèmes électriques et photovoltaïques pour soutenir la transition énergétique en Afrique.</p>
+</header>
 
-  <!-- À propos -->
-  <section id="about">
-    <h2>À propos</h2>
-    <p>Ingénieur en Génie Électrique et Énergétique, je mets mes compétences au service de la transformation énergétique en Afrique. Spécialisé dans le dimensionnement des réseaux électriques et les systèmes solaires photovoltaïques, je conçois des solutions techniques fiables, optimisées et adaptées aux réalités locales.  
-      
-  Au-delà de la technique, ma vision est claire : accélérer l’accès à une énergie durable, soutenir l’industrialisation et contribuer activement à la modernisation des infrastructures électriques. Chaque projet est pour moi une opportunité d’allier performance technique, viabilité économique et impact social.</p>
-  </section>
+<section id="about">
+<h2>À propos</h2>
+<p>
+Ingénieur en Génie Électrique et Énergétique, je mets mes compétences au service de la transformation énergétique en Afrique. Spécialisé dans le dimensionnement des réseaux électriques et les systèmes solaires photovoltaïques, je conçois des solutions techniques fiables, optimisées et adaptées aux réalités locales.
+</p>
+<p>
+Au-delà de la technique, ma vision est claire : accélérer l’accès à une énergie durable, soutenir l’industrialisation et contribuer activement à la modernisation des infrastructures électriques. Chaque projet est pour moi une opportunité d’allier performance technique, viabilité économique et impact social.
+</p>
+</section>
 
-  <!-- Compétences -->
-  <section id="skills">
-    <h2>Compétences</h2>
-    <div class="grid-2">
-      <div>
-        <h3>Techniques</h3>
-        <ul>
-          <li>Conception et dimensionnement de systèmes solaires PV</li>
-          <li>Études de pertes, intégration réseau, DAO, SCADA</li>
-          <li>Planification et suivi de projet (MS Project)</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Logiciels & Outils</h3>
-        <ul>
-          <li>AutoCAD, PowerFactory, NEPLAN, PVsyst, WinRelais</li>
-          <li>MS Project, Excel, PowerPoint, Access</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<section id="skills">
+<h2>Compétences</h2>
 
-  <!-- Projets -->
-  <section id="projects">
-    <h2>Projets</h2>
-    <div class="projects-grid">
+<div class="grid-2">
 
-      <div class="project">
-        <img src="projet1.jpg" alt="Extension de la Centrale Solaire de Ferkessédougou">
-        <div class="project-info">
-          <h4>Centrale Solaire de Ferkessédougou</h4>
-          <p>Étude comparative, optimisation, simulation PVsyst et intégration BESS.</p>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="projet2.jpg" alt="Projet Solaire de Kong">
-        <div class="project-info">
-          <h4>Projet Solaire de Kong</h4>
-          <p>Analyse du DAO, préparation d’appel d’offres, étude des verrous HTA.</p>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="projet3.jpg" alt="Système PV connecté au réseau">
-        <div class="project-info">
-          <h4>Système PV Connecté au Réseau</h4>
-          <p>Dimensionnement et simulation pour autoconsommation sur PVsyst.</p>
-        </div>
-      </div>
-
-<div class="project">
-  <a href="memoire/Memoire_Phanuel_Reseaux_Electriques.pdf" target="_blank">
-    <img src="images/memoire-cover.jpg" alt="Mémoire de Master – Réseaux Électriques">
-  </a>
-  <div class="project-info">
-    <h4>Mémoire de Master – Réseaux Électriques</h4>
-    <p>
-      Étude approfondie sur l’intégration des systèmes photovoltaïques au réseau électrique,
-      analyse des contraintes techniques et propositions d’optimisation.
-    </p>
-    <p><strong>Mots-clés :</strong> Réseaux électriques, PV, intégration réseau</p>
-  </div>
+<div>
+<h3>Réseaux électriques</h3>
+<ul>
+<li>Dimensionnement de lignes HTB, HTA et BT</li>
+<li>Études de raccordement au réseau</li>
+<li>Dimensionnement de postes HTB/HTA/BT</li>
+<li>Lecture et élaboration de schémas électriques</li>
+<li>Suivi de travaux</li>
+<li>Réalisation de plans de raccordement</li>
+</ul>
 </div>
 
-    </div>
-  </section>
+<div>
+<h3>Énergies renouvelables</h3>
+<ul>
+<li>Dimensionnement de centrales photovoltaïques</li>
+<li>Études technico-économiques de projets solaires</li>
+<li>Intégration de systèmes de stockage d’énergie (BESS)</li>
+<li>Analyse de production et optimisation énergétique</li>
+</ul>
+</div>
 
-  <!-- Expériences -->
-  <section id="experience">
-    <h2>Expériences professionnelles</h2>
-    <ul>
-      <li>Stagiaire Ingénieur – VINCI Energies CI (2025)</li>
-      <li>Stagiaire – SONABEL, Burkina Faso (2023)</li>
-      <li>Projets académiques – Institut 2iE (2023)</li>
-    </ul>
-  </section>
+<div>
+<h3>Analyse & Gestion de projet</h3>
+<ul>
+<li>Étude de faisabilité</li>
+<li>Estimation quantitative et financière</li>
+<li>Planification technique</li>
+<li>Coordination terrain</li>
+</ul>
+</div>
 
-  <!-- Formation -->
-  <section id="education">
-    <h2>Formation</h2>
-    <ul>
-      <li>Master – Génie Électrique, Énergétique et Industriel, Institut 2iE (2023 – 2026)</li>
-      <li>Bachelor – Génie Électrique, Institut 2iE (2022 – 2023)</li>
-      <li>Classes Préparatoires – Institut 2iE (2019 – 2021)</li>
-    </ul>
-  </section>
+<div>
+<h3>Outils</h3>
+<ul>
+<li>AutoCAD, PowerFactory, NEPLAN, PVCase, WinRelais</li>
+<li>MS Project, Excel, PowerPoint, Access</li>
+</ul>
+<p><strong>Compétences supplémentaires :</strong><br>
+Énergie éolienne (principes de fonctionnement et intégration réseau) · Hydroélectricité (bases de conception et production) · Systèmes CVC pour bâtiments (VRV/VRF, principes de dimensionnement)
+</p>
+</div>
 
-  <!-- Contacts -->
-  <section id="contacts">
-    <h2>Contact</h2>
-    <p>📧 <a href="mailto:djarabedjeramadjiphanuel@gmail.com">djarabedjeramadjiphanuel@gmail.com</a> | <a href="mailto:phanuel.djarabe@2ie-edu.org">phanuel.djarabe@2ie-edu.org</a></p>
-    <p>📱 +226 54 66 43 56 / +226 61 00 39 09</p>
-    <p>🏠 Ouagadougou, Burkina Faso</p>
-    <p>🔗 <a href="https://www.linkedin.com/in/phanuel-djarabébs02-ptec04-D07" target="_blank">LinkedIn</a></p>
-  </section>
+</div>
+</section>
 
-  <!-- Références -->
-  <section id="references">
-    <h2>Références</h2>
-    <ul>
-      <li><strong>Pr. Y. Moussa SORO</strong> – Chef de département GEEI, Institut 2iE | 📞 +226 68 76 88 22 | ✉️ <a href="mailto:moussa.soro@2ie-edu.org">moussa.soro@2ie-edu.org</a></li>
-      <li><strong>Dr Aboubakar GOMNA</strong> – Enseignant chercheur, Institut 2iE | 📞 +226 51 98 24 20 | ✉️ <a href="mailto:aboubakar.gomna@2ie-edu.org">aboubakar.gomna@2ie-edu.org</a></li>
-      <li><strong>Roland TIAPANI</strong> – Responsable Bureau d’étude Omexon Poste, VINCI Energies CI | ✉️ <a href="mailto:roland.tiapani@omexom.com">roland.tiapani@omexom.com</a></li>
-      <li><strong>Dr. Yohan RICHARDSON</strong> – Chef du département STI, Institut 2iE | 📞 +226 68 76 88 71 | ✉️ <a href="mailto:yohan.richardson@2ie-edu.org">yohan.richardson@2ie-edu.org</a></li>
-    </ul>
-  </section>
+<section id="projects">
+<h2>Projets</h2>
 
-  <footer>
-    © 2025 Djarabé Djeramadji Phanuel — Tous droits réservés.
-  </footer>
+<div class="projects-grid">
+
+<div class="project">
+<img src="projet1.jpg">
+<div class="project-info">
+<h4>Étude de ligne HTA – Zagtoulie (Burkina Faso)</h4>
+<p><strong>Type :</strong> Étude technique de réseau HTA</p>
+<ul>
+<li>Étude de tracé et choix du type de ligne (aérienne)</li>
+<li>Dimensionnement électrique (chute de tension, section des conducteurs, bilan de puissance)</li>
+<li>Dimensionnement mécanique des supports et conducteurs</li>
+<li>Élaboration du devis quantitatif et estimatif</li>
+</ul>
+<p><strong>Impact :</strong> Amélioration de l’accès à l’électricité en zone périurbaine.</p>
+</div>
+</div>
+
+<div class="project">
+<img src="projet2.jpg">
+<div class="project-info">
+<h4>Électrification de 32 localités rurales – Burkina Faso</h4>
+<p><strong>Type :</strong> Projet d’électrification rurale</p>
+<ul>
+<li>Réalisation des études techniques de raccordement HTA/BT</li>
+<li>Participation à la planification et au dimensionnement des infrastructures</li>
+<li>Suivi des travaux de piquetage et d’implantation des ouvrages</li>
+</ul>
+<p><strong>Impact :</strong> Extension du réseau électrique national vers des zones rurales isolées, favorisant le développement socio-économique local.</p>
+</div>
+</div>
+
+<div class="project">
+<img src="projet3.jpg">
+<div class="project-info">
+<h4>Construction de la Centrale Solaire et du Poste d’Évacuation de Ferkessédougou – Côte d’Ivoire</h4>
+<p><strong>Type :</strong> Centrale solaire photovoltaïque et poste électrique d’évacuation d’énergie</p>
+<ul>
+<li>Suivi des travaux liés aux infrastructures électriques</li>
+<li>Réalisation des plans de raccordement</li>
+<li>Suivi des travaux de pose et de raccordement des équipements du poste</li>
+<li>Participation à la configuration des systèmes de protection et de contrôle-commande</li>
+<li>Suivi des essais et contre-essais de mise en service des ouvrages</li>
+</ul>
+<p><strong>Impact :</strong> Contribution à l’intégration sécurisée de la production solaire au réseau national et au renforcement du mix énergétique.</p>
+</div>
+</div>
+
+<div class="project">
+<div class="project-image">
+  <img src="memoire-cover.jpg">
+</div>
+<div class="project-info">
+<h4>Mémoire de Fin d’Études – Conception technico-économique de l’extension de la centrale solaire photovoltaïque de 52,44 MWc de Ferkessédougou avec intégration d’un BESS</h4>
+<p><strong>Type :</strong> Étude stratégique d’optimisation énergétique.</p>
+<ul>
+<p><strong>Objectifs :</strong></p>
+<ul>
+<li>Étudier l’extension de capacité de la centrale</li>
+<li>Intégrer un système de stockage d’énergie (BESS)</li>
+<li>Optimiser la rentabilité du projet et la stabilité de l’injection réseau</li>
+</ul>
+<p><strong>Axes d’étude :</strong></p>
+<ul>
+<li>Dimensionnement de l’extension photovoltaïque</li>
+<li>Dimensionnement du système de stockage</li>
+<li>Analyse technico-économique comparative</li>
+<li>Étude de rentabilité et évaluation de l’impact sur le réseau</li>
+</ul>
+<p><strong>Impact :</strong> Amélioration de la flexibilité du système électrique et contribution à la transition énergétique.</p>
+
+<p><strong>Document disponible sur demande.</strong></p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="experience">
+<h2>Expérience Professionnelle</h2>
+
+<p><strong>SONABEL</strong><br>Stage académique</p>
+<p><strong>Eco-Electrical Service</strong><br>Ingénieur Études et Travaux – Stage d’apprentissage</p>
+<p><strong>Vinci Energies Côte d’Ivoire</strong><br>Ingénieur Études – Stage PFE</p>
+<p><strong>Vinci Energies Côte d’Ivoire</strong><br>Ingénieur Études et Travaux – Stage Professionnel</p>
+</section>
+
+<section id="education">
+<h2>Formation</h2>
+<ul>
+<li>Master – Génie Électrique, Énergétique et Industriel, Institut 2iE (2023–2026)</li>
+<li>Bachelor – Génie Électrique, Institut 2iE (2022–2023)</li>
+<li>Classes Préparatoires – Institut 2iE (2019–2021)</li>
+</ul>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>📧 <a href="mailto:djarabedjeramadjiphanuel@gmail.com">djarabedjeramadjiphanuel@gmail.com</a></p>
+<p>📱 +226 54 66 43 56 / +225 07 18 93 6055 </p>
+<p>🔗 <a href="https://www.linkedin.com/in/phanuel-djarabébs02-ptec04-D07" target="_blank">LinkedIn</a></p>
+<p>📍 Abidjan, Côte d'Ivoire</p>
+</section>
+
+<section id="references">
+<h2>Références</h2>
+<ul>
+<li>
+<strong>Pr. Y. Moussa SORO</strong> – Chef de département GEEI, Institut 2iE |
+📞 +226 68 76 88 22 |
+✉️ <a href="mailto:moussa.soro@2ie-edu.org">moussa.soro@2ie-edu.org</a>
+</li>
+<li>
+<strong>Dr Aboubakar GOMNA</strong> – Enseignant chercheur, Institut 2iE |
+📞 +226 51 98 24 20 |
+✉️ <a href="mailto:aboubakar.gomna@2ie-edu.org">aboubakar.gomna@2ie-edu.org</a>
+</li>
+<li>
+<strong>Roland TIAPANI</strong> – Responsable Bureau d’étude Omexon Poste, VINCI Energies CI |
+✉️ <a href="mailto:roland.tiapani@omexom.com">roland.tiapani@omexom.com</a>
+</li>
+<li>
+<strong>Dr Yohan RICHARDSON</strong> – Chef du département STI, Institut 2iE |
+📞 +226 68 76 88 71 |
+✉️ <a href="mailto:yohan.richardson@2ie-edu.org">yohan.richardson@2ie-edu.org</a>
+</li>
+</ul>
+</section>
+
+<footer>
+© 2026 Djarabé Djeramadji Phanuel — Tous droits réservés.
+</footer>
 
 </body>
 </html>
