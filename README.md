@@ -229,8 +229,9 @@
   <!-- À propos -->
   <section id="about">
     <h2>À propos</h2>
-    <p>Je suis Djarabé Djeramadji Phanuel, titulaire d'un Master en Génie Électrique, Énergétique et Industriel (option Réseaux Électriques) à l’Institut 2iE. 
-    Mon intérêt porte sur le développement d’infrastructures énergétiques fiables et durables, avec un focus particulier sur les centrales solaires photovoltaïques et leur intégration au réseau.</p>
+    <p>Ingénieur en Génie Électrique et Énergétique, je mets mes compétences au service de la transformation énergétique en Afrique. Spécialisé dans le dimensionnement des réseaux électriques et les systèmes solaires photovoltaïques, je conçois des solutions techniques fiables, optimisées et adaptées aux réalités locales.
+
+Au-delà de la technique, ma vision est claire : accélérer l’accès à une énergie durable, soutenir l’industrialisation et contribuer activement à la modernisation des infrastructures électriques. Chaque projet est pour moi une opportunité d’allier performance technique, viabilité économique et impact social.</p>
   </section>
 
   <!-- Compétences -->
