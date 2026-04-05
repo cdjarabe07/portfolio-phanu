@@ -365,7 +365,7 @@ système tracker</li>
           <li>Analyse financière et évaluation de la rentabilité des différentes solutions</li>
         </ul>
         <p>
-          <a href="ferkesse_extension.pdf" download class="btn-cv">Télécharger le projet</a>
+          <a href="20190113_DJARABE_Djeramadji Phanuel_S10 GEEI_Janvier 2026.pdf" target="_blank" class="btn-cv">Voir le projet</a>
         </p>
       </div>
     </div>
