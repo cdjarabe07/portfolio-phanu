@@ -406,28 +406,28 @@ Burkina Faso, Lot 01</h4>
 <h2>Expérience Professionnelle</h2>
 
 <div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-  <img src="vinci.png" style="width:50px; height:50px; object-fit:contain;">
+  <img src="vinci.jpeg" style="width:50px; height:50px; object-fit:contain;">
   <div>
     <strong>Vinci Energies Côte d’Ivoire</strong><br>
     Ingénieur Études et Travaux – Stage Professionnel
   </div>
 </div>
 <div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-  <img src="vinci2.png" style="width:50px; height:50px; object-fit:contain;">
+  <img src="vinci.jpeg" style="width:50px; height:50px; object-fit:contain;">
   <div>
     <strong>Vinci Energies Côte d’Ivoire</strong><br>
     Ingénieur Études – Stage PFE
   </div>
 </div>
 <div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-  <img src="vinci3.png" style="width:50px; height:50px; object-fit:contain;">
+  <img src="eco.jpeg" style="width:50px; height:50px; object-fit:contain;">
   <div>
     <strong>Eco-Electrial Service</strong><br>
     Ingénieur Études et Travaux – Stage d'apprentissage
   </div>
 </div>
 <div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
-  <img src="vinci4.png" style="width:50px; height:50px; object-fit:contain;">
+  <img src="sonabel.jpeg" style="width:50px; height:50px; object-fit:contain;">
   <div>
     <strong>SONABEL</strong><br>
     Stage académique
