@@ -239,7 +239,7 @@
 <li><a href="#contact">Contact</a></li>
 <li><a href="#references">Références</a></li>
 </ul>
-<a href="CV_Phanuel.pdf" class="btn-cv" download="">Télécharger le CV</a>
+<a href="CV_Phanuel.pdf" target="_blank" class="btn-cv">Télécharger le CV</a>
 </nav>
 
 <header>
@@ -456,18 +456,16 @@ Burkina Faso, Lot 01</h4>
 <h2>Références</h2>
 <ul>
 <li>
-<strong>Dr Aboubakar GOMNA</strong> | Enseignant chercheur département GEEI (Institut 2iE) |
-📞 +226 51 98 24 20 |
-✉️ <a href="mailto:aboubakar.gomna@2ie-edu.org">aboubakar.gomna@2ie-edu.org</a>
+<strong>Dr Aboubakar GOMNA</strong> | Enseignant chercheur département GEEI (Institut 2iE)
+<p>📞 +226 51 98 24 20 | ✉️ <a href="mailto:aboubakar.gomna@2ie-edu.org">aboubakar.gomna@2ie-edu.org</a></p> 
 </li>
 <li>
-<strong>Roland TIAPANI</strong> | Responsable bureau d'étude OMEXOM Poste, Ligne et Centrale (VECI) | 📞 +225 07 87 751 275 |
-✉️ <a href="mailto:roland.tiapani@omexom.com">roland.tiapani@omexom.com</a>
+<strong>Roland TIAPANI</strong> | Responsable bureau d'étude OMEXOM Poste, Ligne et Centrale (VECI)
+<p>📞 +225 07 87 751 275 | ✉️ <a href="mailto:roland.tiapani@omexom.com">roland.tiapani@omexom.com</a></p>  
 </li>
 <li>
-<strong>Ing. TRAORE K. Aichatou</strong> | Responsable CCN (VECI) |
-📞 +225 07 58 853 668 |
-✉️ <a href="mailto:aichatou.traore@omexom.com">aichatou.traore@omexom.com</a>
+<strong>Ing. TRAORE K. Aichatou</strong> | Responsable CCN (VECI)
+<p>📞 +225 07 58 853 668 | ✉️ <a href="mailto:aichatou.traore@omexom.com">aichatou.traore@omexom.com</a></p> 
 </li>
 </ul>
 </section>
